@@ -1,3 +1,7 @@
+window.addEventListener('storage', function (e) {
+  console.log('change');
+  document.querySelector('.out').textContent = this.localStorage.getItem('b1');
+});
 localStorage.setItem('data', 5);
 console.log(localStorage.getItem('data'));
 
